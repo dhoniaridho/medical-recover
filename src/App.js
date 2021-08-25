@@ -3,7 +3,7 @@ import ROUTES, { RenderRoutes } from './routes';
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <RenderRoutes routes={ROUTES} />
     </div>
   );

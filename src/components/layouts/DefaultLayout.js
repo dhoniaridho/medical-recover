@@ -6,7 +6,9 @@ export default function DefaultLayout (props) {
     return (
         <div>
             <Navigation />
-            {children}
+                <main>
+                    {children}
+                </main>
             <Footer />
         </div>
     )
