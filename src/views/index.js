@@ -42,15 +42,32 @@ export default function Index() {
                     })}
                 </div>
             </section>
-            <section className="grid grid-cols-4 px-28 text-center py-20">
-                {stats.map((s, i)=> {
-                    return(
-                        <div>
-                            <h1 className="text-red-500 text-3xl font-semibold">{s.count}</h1>
-                            <h1>{s.title}</h1>
-                        </div>
-                    )
-                })}
+            <section className="px-28">
+                <div className="grid grid-cols-4 text-center py-20">
+                    {stats.map((s, i) => {
+                        return (
+                            <div>
+                                <h1 className="text-red-500 text-3xl font-semibold">{s.count}</h1>
+                                <h1>{s.title}</h1>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className="flex justify-between py-20">
+                    <div className="w-1/2">
+                        <div className="border-t-4 border-red-500 w-1/5"></div>
+                        <h1 className="text-4xl font-bold mt-10">Meet Our Experts</h1>
+                        <p className="mt-5 w-3/4">Problems trying to resolve the conflict between
+                            the two major realms of Classical physics:
+                            Newtonian mechanics </p>
+                       <div className="mt-5">
+                       <a className="text-red-500 font-semibold ">Learn More ></a>
+                       </div>
+                    </div>
+                    <div className="w-1/2">
+                        <img src="https://i.ibb.co/JtKx1TL/meet.png" />
+                    </div>
+                </div>
             </section>
         </DefaultLayout>
     )
