@@ -3,7 +3,6 @@ import ProductCard from "../components/ui/ProductCard";
 import Button from "../components/ui/Button";
 import Review from "../components/ui/Review";
 import { features, stats } from "../content/home";
-import * as Ai from 'react-icons/ai'
 
 export default function Index() {
     return (
