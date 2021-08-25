@@ -10,13 +10,13 @@ export default function ProductCard() {
                 </div>
                 <img className="w-full" src="https://i.ibb.co/jbJ7mcz/dep-1.png" alt="dept-1" />
                 <div className="-mt-16 flex place-items-center justify-center bg-transparent z-10">
-                    <div className="bg-white mx-1 rounded-full p-2">
+                    <div role="button" className="bg-white mx-1 rounded-full p-2">
                         <Ai.AiOutlineHeart className="text-xl" />
                     </div>
-                    <div className="bg-white mx-1 rounded-full p-2">
+                    <div role="button" className="bg-white mx-1 rounded-full p-2">
                         <Ai.AiOutlineShoppingCart className="text-xl" />
                     </div>
-                    <div className="bg-white mx-1 rounded-full p-2">
+                    <div role="button" className="bg-white mx-1 rounded-full p-2">
                         <Ai.AiOutlineEye className="text-xl" />
                     </div>
                 </div>
