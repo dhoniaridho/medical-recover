@@ -1,6 +1,6 @@
 import DefaultLayout from "../components/layouts/DefaultLayout";
 import Button from "../components/ui/Button";
-import { features } from "../content/home";
+import { features, stats } from "../content/home";
 
 
 export default function Index() {
@@ -42,10 +42,15 @@ export default function Index() {
                     })}
                 </div>
             </section>
-            <section className="grid grid-cols-4 px-28">
-                <div>
-                    
-                </div>
+            <section className="grid grid-cols-4 px-28 text-center py-20">
+                {stats.map((s, i)=> {
+                    return(
+                        <div>
+                            <h1 className="text-red-500 text-3xl font-semibold">{s.count}</h1>
+                            <h1>{s.title}</h1>
+                        </div>
+                    )
+                })}
             </section>
         </DefaultLayout>
     )

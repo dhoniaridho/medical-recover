@@ -15,3 +15,22 @@ export const features = [
         paragraph: 'The gradual accumulation of information about atomic and small-scale behaviour...'
     },
 ]
+
+export const stats = [
+    {
+        count: '15K',
+        title: 'Happy Customers'
+    },
+    {
+        count: '150K',
+        title: 'Monthly Visitors'
+    },
+    {
+        count: '15',
+        title: 'Countries  Worldwide'
+    },
+    {
+        count: '100+',
+        title: 'Top Partners'
+    },
+]
