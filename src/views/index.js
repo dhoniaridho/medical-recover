@@ -1,8 +1,9 @@
 import DefaultLayout from "../components/layouts/DefaultLayout";
 import ProductCard from "../components/ui/ProductCard";
 import Button from "../components/ui/Button";
+import Review from "../components/ui/Review";
 import { features, stats } from "../content/home";
-
+import * as Ai from 'react-icons/ai'
 
 export default function Index() {
     return (
@@ -81,6 +82,19 @@ export default function Index() {
                     <ProductCard />
                     <ProductCard />
                     <ProductCard />
+                </div>
+            </section>
+            <section className="py-20 px-28 bg-white">
+                <div>
+                    <h4 className="text-red-500 font-bold">Pratice Advice</h4>
+                    <h1 className="text-4xl font-bold mt-3">Leading Medicine</h1>
+                    <p className="text-sm w-1/2 mt-6">Problems trying to resolve the conflict between
+                        the two major realms of Classical physics: Newtonian mechanics  </p>
+                </div>
+                <div className="grid grid-cols-3 px-10 py-20 gap-20">
+                    <Review />
+                    <Review />
+                    <Review />
                 </div>
             </section>
         </DefaultLayout>
