@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom"
 export default function Navigation() {
     return (
         <header>
-            <nav className="px-28 bg-gray-50">
+            <nav className="px 5 sm:px-10 md:px-28 bg-gray-50">
                 <div className="h-20 flex justify-between place-items-center">
                     <div className="w-1/2 flex justify-around">
                         <div>
-                            <h3 className="text-3xl font-bold">MedicalRecov</h3>
+                            <h3 className="text-xl md:text-3xl font-bold">MedicalRecov</h3>
                         </div>
-                        <ul className="flex place-items-center font-semibold">
+                        <ul className="hidden sm:flex place-items-center font-semibold">
                             {menus.map((menu, i) => {
                                 return (
                                     <li className="mx-2" key={i}>
@@ -22,7 +22,7 @@ export default function Navigation() {
                         </ul>
                     </div>
                     <div className="w-1/2 flex place-items-center justify-center">
-                        <ul className="flex place-items-center font-semibold -mr-16">
+                        <ul className="hidden sm:flex place-items-center font-semibold -mr-16">
                             <li className="mx-4">
                                 <a href="/" className="text-red-500">Login</a>
                             </li>

@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 export default function Footer() {
     return (
         <footer className="border-t">
-            <div className="grid grid-cols-6 py-20 text-left px-28">
+            <div className="grid md:grid-cols-6 py-20 text-left px-5 sm:px-10 md:px-28">
                 <div>
                     <h3 className="font-bold mb-5">Company Info</h3>
                     <ul className="font-semibold">
@@ -55,12 +55,12 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className="flex justify-between bg-gray-100 px-28">
-                <div className="h-16 flex place-items-center">
-                    <p>Coded by <a className="text-red-500" href="http://dhoniaridho.vercel.app" target="_blank" rel="noreferrer">dhoniaridho</a> Designed By Figmaland All Right Reserved </p>
+            <div className="flex justify-between bg-gray-100 px-5 md:px-28">
+                <div className="h-16 flex place-items-center text-sm">
+                    <p className="whitespace-nowrap">Coded by <a className="text-red-500" href="http://dhoniaridho.vercel.app" target="_blank" rel="noreferrer">dhoniaridho</a></p>
                 </div>
-                <div className="h-16 bg-gray-100 flex place-items-center px-28">
-                    <ul className="flex text-red-500 text-xl">
+                <div className="h-16 bg-gray-100 flex place-items-center md:px-28">
+                    <ul className="flex text-red-500  md:text-xl">
                         <li className="mx-2">
                             <FaFacebook />
                         </li>

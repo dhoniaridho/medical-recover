@@ -8,9 +8,9 @@ import TeamCard from "../components/ui/TeamCard";
 export default function Index() {
   return (
     <DefaultLayout>
-      <section className="px-28 pb-10 bg-gray-50">
-        <div className="flex justify-between place-items-center">
-          <div className="w-1/2">
+      <section className="px-5 sm:px-10 md:px-28 pb-10 bg-gray-50">
+        <div className="flex flex-col md:flex-row justify-between place-items-center">
+          <div className="md:w-1/2 order-2 md:order-1">
             <h1 className="text-red-500 font-bold">Join Us</h1>
             <h1 className="text-5xl font-bold mt-7">
               A Great Place to Receive Care
@@ -28,11 +28,11 @@ export default function Index() {
               </Button>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="md:w-1/2 order-1 md:order-2">
             <img src="https://i.ibb.co/4WKmQ7g/hero.png" alt="" />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-10 -mt-10">
+        <div className="grid md:grid-cols-3 gap-10 -mt-10">
           {features.map((f, i) => {
             return (
               <div className="bg-white shadow-lg py-6 px-3" key={i}>
@@ -45,11 +45,11 @@ export default function Index() {
           })}
         </div>
       </section>
-      <section className="px-28">
-        <div className="grid grid-cols-4 text-center py-20">
+      <section className="px-5 sm:px-10 md:px-28">
+        <div className="grid md:grid-cols-4 text-center py-20 gap-5">
           {stats.map((s, i) => {
             return (
-              <div>
+              <div key={i}>
                 <h1 className="text-red-500 text-3xl font-semibold">
                   {s.count}
                 </h1>
@@ -58,8 +58,8 @@ export default function Index() {
             );
           })}
         </div>
-        <div className="flex justify-between py-20">
-          <div className="w-1/2">
+        <div className="flex justify-between flex-col md:flex-row py-20">
+          <div className="md:w-1/2">
             <div className="border-t-4 border-red-500 w-1/5"></div>
             <h1 className="text-4xl font-bold mt-10">Meet Our Experts</h1>
             <p className="mt-5 w-3/4">
@@ -77,7 +77,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section className="py-20 px-28 bg-green-50">
+      <section className="py-20 px-5 ms:px-10 md:px-28 bg-green-50">
         <div>
           <h4 className="text-red-500 font-bold">Pratice Advice</h4>
           <h1 className="text-4xl font-bold mt-3">Our Departement</h1>
@@ -86,13 +86,13 @@ export default function Index() {
             of Classical physics: Newtonian mechanics{" "}
           </p>
         </div>
-        <div className="grid grid-cols-3 py-10 gap-2">
+        <div className="grid md:grid-cols-3 py-10 gap-2">
           <ProductCard />
           <ProductCard />
           <ProductCard />
         </div>
       </section>
-      <section className="py-20 px-28 bg-white">
+      <section className="py-20 px-5 md:px-10 md:px-28 bg-white">
         <div>
           <h4 className="text-red-500 font-bold">Pratice Advice</h4>
           <h1 className="text-4xl font-bold mt-3">Leading Medicine</h1>
@@ -101,13 +101,13 @@ export default function Index() {
             of Classical physics: Newtonian mechanics{" "}
           </p>
         </div>
-        <div className="grid grid-cols-3 px-10 py-20 gap-20">
+        <div className="grid md:grid-cols-3 px-10 py-20 gap-20">
           <Review />
           <Review />
           <Review />
         </div>
       </section>
-      <section className="py-20 px-28 bg-white">
+      <section className="py-20 px-5 ms:px-10 md:px-28 bg-white">
         <div>
           <h4 className="text-red-500 font-bold">Team</h4>
           <h1 className="text-4xl font-bold mt-3">Our Team</h1>
@@ -116,7 +116,7 @@ export default function Index() {
             of Classical physics: Newtonian mechanics{" "}
           </p>
         </div>
-        <div className="grid grid-cols-4 px-10 py-20 gap-10">
+        <div className="grid md:grid-cols-4 md:px-10 py-20 gap-10">
           <TeamCard />
           <TeamCard />
           <TeamCard />
